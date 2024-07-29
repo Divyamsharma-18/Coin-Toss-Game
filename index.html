@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coin Toss Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Coin Toss Game</h1>
+        <p>Guess the outcome of the coin toss:</p>
+        <div class="buttons">
+            <button onclick="tossCoin('heads')">Heads</button>
+            <button onclick="tossCoin('tails')">Tails</button>
+        </div>
+        <div id="coin" class="coin">
+            <div class="side heads">Heads</div>/
+            <div class="side tails">Tails</div>
+        </div>
+        <p id="message"></p>
+        <p id="result"></p>
+        <button onclick="resetGame()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
